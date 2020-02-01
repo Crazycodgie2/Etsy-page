@@ -1,0 +1,308 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 1300px;
+  margin: auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: rgb(236, 86, 39);
+  font-weight: lighter;
+}
+
+header p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top input {
+  height: 49px;
+  width: 1050px;
+  border: 1px solid rgb(167, 165, 165);
+  border-radius: 22px;
+  padding: 17px;
+  font-size: 16px;
+  background-color: rgba(228, 227, 227, 0.877);
+}
+
+.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#border {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#orangeBox {
+  width: 1300px;
+  margin: auto;
+}
+
+#orangeBox ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#orangeBox > ul > li {
+  background: rgb(247, 147, 111);
+  height: 36px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+.obj {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "title price";
+}
+
+.obj img {
+  grid-area: img;
+  justify-self: center;
+}
+
+.obj .title {
+  grid-area: title;
+  justify-self: left;
+  text-overflow: ellipsis;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.obj .price {
+  grid-area: price;
+  justify-self: right;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  width: 200px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.sidenav li {
+  display: block;
+  color: #000;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+.sidebar {
+  position: absolute;
+  left: 30px;
+  top: 170px;
+}
+
+.header {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.textarea {
+  position: absolute;
+  right: 5px;
+  bottom: 220px;
+  outline: black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.square1 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 10px;
+  position: relative;
+  left: 20px;
+  top: 194px;
+  border-radius: 5px;
+}
+
+.square2 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 10px;
+  position: relative;
+  left: 20px;
+  top: 215px;
+  border-radius: 5px;
+}
+.square3 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 246px;
+  border-radius: 100px;
+}
+
+.square4 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 278px;
+  border-radius: 5px;
+}
+
+.square5 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 345px;
+  border-radius: 5px;
+}
+
+.square6 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 410px;
+  border-radius: 5px;
+}
+
+.square7 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 444px;
+  border-radius: 5px;
+}
+
+.square8 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 510px;
+  border-radius: 5px;
+}
+
+.square9 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 578px;
+  border-radius: 100px;
+}
+
+.square10 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 640px;
+  border-radius: 100px;
+}
+
+.square11 {
+  border: 2px solid rgb(225, 225, 225);
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  position: relative;
+  left: 20px;
+  top: 675px;
+  border-radius: 5px;
+}
+
+.button {
+  text-indent: 25px;
+  white-space: nowrap;
+}
+
+.rounded {
+  text-indent: 25px;
+}
+
+.nobutton {
+  text-indent: 25px;
+  white-space: nowrap;
+}
