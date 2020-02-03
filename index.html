@@ -4,110 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Whiskey | Etsy</title>
+    <title>Whiskey</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="top">
-        <h1>Etsy</h1>
+      <div class="Etsyhead">
+        <h1 class="Etsy">Etsy</h1>
         <input
           type="text"
           id="search"
           name="search"
           placeholder="Search for items or shops"
         />
-        <p>Sign in</p>
-        <a href="#"
-          ><img
-            src="https://raw.githubusercontent.com/PC-FEE-Master/Create-Etsy-Search-Page/master/assets/cart.png"
-        /></a>
-      </div>
-      <div class="sidebar">
-        <ol class="sidenav">
-          <li class="header">All categories</li>
-          <li class="nobutton">Home & Living</li>
-          <li class="nobutton">Art & Collectibles</li>
-          <li class="nobutton">Clothing</li>
-          <li class="nobutton">Weddings</li>
-          <li class="header">+ Show more</li>
-          <li class="header">Special Offers</li>
-          <li class="button">FREE shipping</li>
-          <li class="button">On sale</li>
-          <li class="header">Ready to ship in</li>
-          <li class="button">1 business day</li>
-          <li class="button">1-3 business days</li>
-          <li class="header">Price ($)</li>
-          <li class="rounded">Any price</li>
-          <li class="rounded">Under $25</li>
-          <li class="rounded">$75 to $100</li>
-          <li class="rounded">Over $100</li>
-          <li class="rounded">Custom</li>
-          <li class="header">Material</li>
-          <li class="button">Ceramic</li>
-          <li class="button">Cork</li>
-          <li class="button">Fabric</li>
-          <li class="button">Glass</li>
-          <li class="button">Metal</li>
-          <li class="header">+ Show more</li>
-          <li class="header">Color</li>
-          <li class="button">Beige</li>
-          <li class="button">Black</li>
-          <li class="button">Blue</li>
-          <li class="button">Bronze</li>
-          <li class="button">Brown</li>
-          <li class="header">+ Show more</li>
-          <li class="header">Can be personalized</li>
-          <li class="button">Yes</li>
-          <li class="button">No</li>
-          <li class="header">Occasion</li>
-          <li class="button">Anniversary</li>
-          <li class="button">Baby shower</li>
-          <li class="button">Bachelor party</li>
-          <li class="button">Bachelorette party</li>
-          <li class="button">Birthday</li>
-          <li class="header">+ Show more</li>
-          <li class="header">Holidy</li>
-          <li class="button">Christmas</li>
-          <li class="button">Cinco de Mayo</li>
-          <li class="button">Easter</li>
-          <li class="button">Father's Day</li>
-          <li class="button">Halloween</li>
-          <li class="header">+ Show more</li>
-          <li class="header">Shop Location</li>
-          <li class="rounded">Anywhere</li>
-          <li class="rounded">United States</li>
-          <li class="rounded">Custom</li>
-          <li class="textarea" name="textarea"></li>
-          <li class="item">Item type</li>
-          <li class="rounded">All items</li>
-          <li class="rounded">Handmade</li>
-          <li class="rounded">Vintage</li>
-          <li class="header">Ordering options</li>
-          <li class="button">Accepts Etsy gift cards</li>
-          <li class="button">Can be gift wrapped</li>
-          <li class="header">Ship to</li>
-          <li class="dropdown" name="dropdown"></li>
-        </ol>
-        <textarea
-          input="text"
-          class="textarea"
-          name="textarea"
-          placeholder="Enter location"
-        ></textarea>
+        <button class="icon"><p>Sign in</p></button>
+        <button class="icon" id="cartImg"><a href="#"><img src="assets/cart.png" /></a></button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="x"><path d="M13.414,12l6.293-6.293a1,1,0,0,0-1.414-1.414L12,10.586,5.707,4.293A1,1,0,0,0,4.293,5.707L10.586,12,4.293,18.293a1,1,0,1,0,1.414,1.414L12,13.414l6.293,6.293a1,1,0,0,0,1.414-1.414Z"></path></svg>
+        <span class="etsy-icon wt-nudge-b-1 "><svg xmlns="http://www.w3.org/2000/svg" class="mag"><path d="M10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18ZM10,4a6,6,0,1,0,6,6A6.007,6.007,0,0,0,10,4Z"></path><path d="M21,22a1,1,0,0,1-.707-0.293l-4-4a1,1,0,0,1,1.414-1.414l4,4A1,1,0,0,1,21,22Z"></path></svg></span>
       </div>
       <div class="bottom">
-        <ul class="nav">
-          <li>Jewelry & Accessories</li>
-          <li>Clothing & Shoes</li>
-          <li>Home & Living</li>
-          <li>Wedding & Party</li>
-          <li>Toys & Entertainment</li>
-          <li>Arts & Collectibles</li>
-          <li>Craft Supplies</li>
-          <li>Vintage</li>
-          <li>Gifts</li>
-        </ul>
+        <nav>
+          <ul class="nav">
+            <li><a href="#">Jewelry & Accessories</a></li>
+            <li><a href="#">Clothing & Shoes</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Wedding & Party</a></li>
+            <li><a href="#">Toys & Entertainment</a></li>
+            <li><a href="#">Arts & Collectibles</a></li>
+            <li><a href="#">Craft Supplies</a></li>
+            <li><a href="#">Vintage</a></li>
+            <li><a href="#">Gifts</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div id="border"></div>
@@ -124,58 +52,108 @@
         <li><a href="#">whiskey svg</a></li>
         <li><a href="#">whiskey print</a></li>
       </ul>
-      <div class="square1"></div>
-      <div class="square1"></div>
-
-      <div class="square2"></div>
-      <div class="square2"></div>
-
-      <div class="square3"></div>
-      <div class="square3"></div>
-      <div class="square3"></div>
-      <div class="square3"></div>
-      <div class="square3"></div>
-
-      <div class="square4"></div>
-      <div class="square4"></div>
-      <div class="square4"></div>
-      <div class="square4"></div>
-      <div class="square4"></div>
-
-      <div class="square5"></div>
-      <div class="square5"></div>
-      <div class="square5"></div>
-      <div class="square5"></div>
-      <div class="square5"></div>
-
-      <div class="square6"></div>
-      <div class="square6"></div>
-
-      <div class="square7"></div>
-      <div class="square7"></div>
-      <div class="square7"></div>
-      <div class="square7"></div>
-      <div class="square7"></div>
-
-      <div class="square8"></div>
-      <div class="square8"></div>
-      <div class="square8"></div>
-      <div class="square8"></div>
-      <div class="square8"></div>
-
-      <div class="square9"></div>
-      <div class="square9"></div>
-      <div class="square9"></div>
-
-      <div class="square10"></div>
-      <div class="square10"></div>
-      <div class="square10"></div>
-
-      <div class="square11"></div>
-      <div class="square11"></div>
     </div>
-    <div class="container"></div>
-    <aside></aside>
+    <div id="wrapper">
+      <div class="whiskeyRes">
+        <span class="cat">All categories</span>
+        <span class="whiskey">"whiskey"</span>
+        <span class="relevancy">Sort by: Relevancy</span>
+      </div>
+      <div class="container">
+      </div>
+      <aside id="sidebar">
+        <h5>All categories</h3>
+        <ul>
+          <li><a href="#">Home & Living</a></li>
+          <li><a href="#">Arts & Collectibles</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Weddings</a></li>
+        </ul>
+        <button class="icon showM"><h5 class="showMore"><span class="plus">+</span>Show more</h5></button> <br>
+        <form id="specialOffers">
+          <h5>Special offers</h5>
+          <input type="checkbox" id="FREEshipping" name="FREEshipping" value="FREEshipping"><label for="FREEshipping"><span class="checkbox">FREE shipping</span> </label><br>
+          <input type="checkbox" id="sale" name="sale" value="sale"><label for="sale"><span class="checkbox">On sale</span></label>
+        </form>
+        <form id="specialOffers">
+          <h5>Ready to ship in</h5>
+          <input type="checkbox" id="1day" name="1day" value="1day"><label for="1day"><span class="checkbox">1 day</span> </label><br> 
+          <input type="checkbox" id="3day" name="3day" value="3day"><label for="3day"><span class="checkbox">1 - 3 days</span></label>
+        </form>
+        <form>
+          <h5 class="priceSide">Price ($)</h5>
+          <input type="radio" name="price" id="price" checked><label for="price"><span class="radio">Any price</span></label><br>
+          <input type="radio" name="price" id="l25"><label for="l25"><span class="radio">Under $25</span></label><br>
+          <input type="radio" name="price" id="25-75"><label for="25-75"><span class="radio">$25 to $75</span></label><br>
+          <input type="radio" name="price" id="75-100"><label for="75-100"><span class="radio">$75 to $100</span></label><br>
+          <input type="radio" name="price" id="m100"><label for="m100"><span class="radio">Over $100</span></label><br>
+          <input type="radio" name="price" id="custom"><label for="custom"><span class="radio">Custom</span></label><br>
+          <input type="text" class="radio" name="low" id="low" placeholder="Low"><span class="radio">to</span><input type="text" class="radio" name="high" id="high" placeholder="High">
+        </form>
+        <form id="specialOffers">
+          <h5>Material</h5>
+          <input type="checkbox" id="ceramic" name="ceramic" value="ceramic"><label for="ceramic"><span class="checkbox">Ceramic</span></label> <br> 
+          <input type="checkbox" id="cork" name="cork" value="cork"><label for="cork"><span class="checkbox">Cork</span></label><br>
+          <input type="checkbox" id="fabric" name="fabric" value="fabric"><label for="fabric"><span class="checkbox">Fabric</span></label><br>
+          <input type="checkbox" id="glass" name="glass" value="glass"><label for="glass"><span class="checkbox">Glass</span></label><br>
+          <input type="checkbox" id="metal" name="metal" value="metal"><label for="metal"><span class="checkbox">Metal</span></label><br>
+          <button class="icon showM"><h5 class="showMore"><span class="plus">+</span>Show more</h5></button> <br>
+        </form>
+        <form id="specialOffers">
+          <h5>Color</h5>
+          <input type="checkbox" id="beige" name="beige" value="beige"><label for="beige"><span class="checkbox">Beige</span> </label><br> 
+          <input type="checkbox" id="black" name="black" value="black"><label for="black"><span class="checkbox">Black</span></label><br>
+          <input type="checkbox" id="blue" name="blue" value="blue"><label for="blue"><span class="checkbox">Blue</span></label><br>
+          <input type="checkbox" id="bronze" name="bronze" value="bronze"><label for="bronze"><span class="checkbox">Bronze</span></label><br>
+          <input type="checkbox" id="brown" name="brown" value="brown"><label for="brown"><span class="checkbox">Brown</span></label><br>
+          <button class="icon showM"><h5 class="showMore"><span class="plus">+</span>Show more</h5></button> <br>
+        </form>
+        <form id="specialOffers">
+          <h5>Can be personalized</h5>
+          <input type="checkbox" id="yes" name="yes" value="yes"><label for="yes"><span class="checkbox">Yes</span></label><br>
+          <input type="checkbox" id="no" name="no" value="no"><label for="no"><span class="checkbox">No</span></label><br>
+        </form>
+        <form id="specialOffers">
+          <h5>Occasion</h5>
+          <input type="checkbox" id="anniversary" name="anniversary" value="anniversary"><label for="anniversary"><span class="checkbox">Anniversary</span> </label><br> 
+          <input type="checkbox" id="baby" name="baby" value="baby"><label for="baby"><span class="checkbox">Baby shower</span></label><br>
+          <input type="checkbox" id="bach" name="bach" value="bach"><label for="bach"><span class="checkbox">Bachelor party</span></label><br>
+          <input type="checkbox" id="bachette" name="bachette" value="bachette"><label for="bachette"><span class="checkbox">Bachelorette party</span></label><br>
+          <input type="checkbox" id="bday" name="bday" value="bday"><label for="bday"><span class="checkbox">Birthday</span></label><br>
+          <button class="icon showM"><h5 class="showMore"><span class="plus">+</span>Show more</h5></button> <br>
+        </form>
+        <form id="specialOffers">
+          <h5>Holiday</h5>
+          <input type="checkbox" id="xmas" name="xmas" value="xmas"><label for="xmas"><span class="checkbox">Christmas</span></label> <br> 
+          <input type="checkbox" id="mayo" name="mayo" value="mayo"><label for="mayo"><span class="checkbox">Cinco de Mayo</span></label><br>
+          <input type="checkbox" id="easter" name="easter" value="easter"><label for="easter"><span class="checkbox">Easter</span></label><br>
+          <input type="checkbox" id="fday" name="fday" value="fday"><label for="fday"><span class="checkbox">Father's day</span></label><br>
+          <input type="checkbox" id="halloween" name="halloween" value="halloween"><label for="halloween"><span class="checkbox">Halloween</span></label><br>
+          <button class="icon showM"><h5 class="showMore"><span class="plus">+</span>Show more</h5></button> <br>
+        </form>
+        <form>
+          <h5 class="priceSide">Shop location</h5>
+          <input type="radio" name="shop" value="any" id="any"checked><label for="any"><span class="radio">Anywhere</span></label><br>
+          <input type="radio" name="shop" value="usa" id="usa"><label for="usa"><span class="radio">United States</span></label><br>
+          <input type="radio" name="shop" value="cus" id="cus"><label for="cus"><span class="radio">Custom</span></label><br>
+          <input type="text" class="radio" name="loc" id="loc" placeholder="Enter Location">
+        </form>
+        <form id="specialOffers">
+          <h5>Holiday</h5>
+          <input type="checkbox" id="gcards" name="gcards" value="gcards"><label for="gcards"><span class="checkbox">Accepts Etsy gift cards</span> </label><br> 
+          <input type="checkbox" id="gwrapped" name="gwrapped" value="gwrapped"><label for="gwrapped"><span class="checkbox">Can be gift-wrapped</span></label><br>
+          <input type="checkbox" id="customizable" name="customizable" value="customizable"><label for="customizable"><span class="checkbox">Customizable</span></label><br>
+        </form>
+        <form id="specialOffers">
+          <h5>Ship to</h5>
+          <select name="shipTo" id="shipTo">
+            <option value="usofa">United States</option>
+            <option value="cad">Canada</option>
+            <option value="europ">Europe</option>
+          </select>
+        </form>
+      </aside>
+    </div>
     <script src="items.js"></script>
     <script src="template.js"></script>
   </body>

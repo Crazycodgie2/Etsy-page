@@ -13,11 +13,23 @@ header {
   margin: auto;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none;
 }
 
-header h1 {
+button {
+  border: none;
+  background: transparent;
+}
+
+.icon:hover {
+  background: #777;
+  border-radius: 50px;
+  align-items: center;
+}
+
+h1 {
   margin: 0;
   font-size: 42px;
   color: rgb(236, 86, 39);
@@ -28,22 +40,46 @@ header p {
   margin: 0;
   font-size: 14px;
   font-weight: 700;
+  text-align: center;
+  height: 33px;
+  width: 60px;
+  padding: 7px 0 0;
 }
 
-.top {
+#cartImg {
+  width: 52px;
+}
+
+.Etsyhead {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.top input {
+.Etsyhead input {
   height: 49px;
-  width: 1050px;
-  border: 1px solid rgb(167, 165, 165);
+  width: 1058px;
+  border: 1px solid gray;
   border-radius: 22px;
   padding: 17px;
   font-size: 16px;
-  background-color: rgba(228, 227, 227, 0.877);
+}
+
+.x {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 13px;
+  right: 200px;
+}
+
+.mag {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 13px;
+  right: 170px;
 }
 
 .bottom ul {
@@ -65,6 +101,8 @@ header p {
 #orangeBox {
   width: 1300px;
   margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #orangeBox ul {
@@ -93,13 +131,81 @@ a:visited {
   color: black;
 }
 
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    "side res"
+    "side main";
+  width: 1300px;
+  margin: auto;
+}
+
+#wrapper .container {
+  grid-area: main;
+}
+
+#wrapper aside {
+  grid-area: side;
+}
+
+#wrapper .whiskeyRes {
+  grid-area: res;
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 0 17px;
+}
+
+.whiskeyRes .cat {
+  padding-left: 40px;
+}
+
+.whiskeyRes .whiskey {
+  padding-left: 40px;
+}
+
+.whiskey::before {
+  content: "";
+  position: absolute;
+  border-color: transparent black;
+  border-style: solid;
+  border-width: 6px 0px 6px 6px;
+  height: 0px;
+  width: 0px;
+  top: 3px;
+  left: 165px;
+}
+
+.whiskeyRes .whiskey::after {
+  content: "";
+  position: absolute;
+  border-color: transparent white;
+  border-style: solid;
+  border-width: 6px 0px 6px 6px;
+  height: 0px;
+  width: 0px;
+  top: 3px;
+  left: 162px;
+}
+
+.whiskeyRes .relevancy {
+  padding-left: 641px;
+}
+
+.relevancy::after {
+  content: "";
+  position: absolute;
+  border-color: black transparent;
+  border-style: solid;
+  border-width: 6px 6px 0px 6px;
+  height: 0px;
+  width: 0px;
+  top: 7px;
+  right: 27px;
+}
+
 .container {
   width: 1000px;
   margin: auto;
-  border: 1px solid #ccc;
-}
-
-#products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
@@ -109,200 +215,193 @@ a:visited {
 .obj {
   display: grid;
   grid-template-areas:
-    "img img"
-    "title price";
+    "img"
+    "title"
+    "name"
+    "rating"
+    "price";
+  line-height: 15px;
+  position: relative;
 }
 
-.obj img {
+.shopName {
+  grid-area: name;
+  height: 50px;
+}
+
+.rating {
+  grid-area: rating;
+  position: absolute;
+  top: -44px;
+  height: 50px;
+}
+
+.obj .mainImg {
   grid-area: img;
   justify-self: center;
+  width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  padding-left: 216px;
+  display: none;
+}
+
+.obj:hover .heart {
+  position: absolute;
+  padding-left: 216px;
+  display: block;
 }
 
 .obj .title {
   grid-area: title;
   justify-self: left;
   text-overflow: ellipsis;
-  width: 150px;
+  width: 250px;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .obj .price {
   grid-area: price;
-  justify-self: right;
-}
-
-ol {
-  list-style-type: none;
+  justify-self: left;
   margin: 0;
-  padding: 1;
-  width: 200px;
-  font-family: arial, sans-serif;
-  font-size: 13px;
 }
 
-.sidenav li {
-  display: block;
-  color: #000;
-  padding: 4px 16px;
-  text-decoration: none;
+#sidebar {
+  font-family: Verdana, Geneva, sans-serif;
 }
 
-.sidebar {
-  position: absolute;
-  left: 30px;
-  top: 170px;
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: Verdana, Geneva, sans-serif;
+  opacity: 0.7;
+  transform: scale(0.8);
 }
 
-.header {
-  font-weight: bold;
-  margin-top: 10px;
+#sidebar ul li {
+  margin: 7px 0;
 }
 
-.textarea {
-  position: absolute;
-  right: 5px;
-  bottom: 220px;
-  outline: black;
-  border-radius: 5px;
+#sidebar h5 {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+#sidebar .showMore {
+  margin: 0 0 5px;
+}
+
+#sidebar .showM {
+  width: 125px;
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar .radio {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+#low,
+#high {
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid gray;
   text-align: center;
+  margin: 0 7px;
 }
 
-.item {
-  font-weight: bold;
-  margin-top: 40px;
+#loc {
+  width: 108px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  margin: 0 7px;
 }
 
-.square1 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 10px;
-  position: relative;
-  left: 20px;
-  top: 194px;
-  border-radius: 5px;
+.priceSide {
+  padding-top: 13px;
 }
 
-.square2 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 10px;
-  position: relative;
-  left: 20px;
-  top: 215px;
-  border-radius: 5px;
-}
-.square3 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 246px;
-  border-radius: 100px;
+.plus {
+  font-size: 18px;
 }
 
-.square4 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 278px;
-  border-radius: 5px;
+.checkbox {
+  font-size: 12px;
+  opacity: 0.7;
 }
 
-.square5 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 345px;
-  border-radius: 5px;
+#specialOffers h5 {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 9px 0 7px;
 }
 
-.square6 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 410px;
-  border-radius: 5px;
-}
+@media screen and (max-width: 900px) {
+  header {
+    width: 800px;
+  }
 
-.square7 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 444px;
-  border-radius: 5px;
-}
+  .container {
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+  }
 
-.square8 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 510px;
-  border-radius: 5px;
-}
+  .top input {
+    width: 553px;
+  }
 
-.square9 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 578px;
-  border-radius: 100px;
-}
+  .nav li {
+    width: 61px;
+  }
 
-.square10 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 640px;
-  border-radius: 100px;
-}
+  #orangeBox {
+    width: 800px;
+  }
 
-.square11 {
-  border: 2px solid rgb(225, 225, 225);
-  height: 18px;
-  width: 18px;
-  margin-top: 5px;
-  position: relative;
-  left: 20px;
-  top: 675px;
-  border-radius: 5px;
-}
+  #orangeBox > ul > li {
+    padding: 17px 20px;
+    margin: 0 15px;
+  }
 
-.button {
-  text-indent: 25px;
-  white-space: nowrap;
-}
+  #wrapper {
+    width: 700px;
+  }
 
-.rounded {
-  text-indent: 25px;
-}
+  .whiskeyRes .whiskey::after {
+    left: 128px;
+  }
 
-.nobutton {
-  text-indent: 25px;
-  white-space: nowrap;
+  .whiskeyRes .whiskey::before {
+    left: 131px;
+  }
+
+  .whiskeyRes .cat {
+    padding-left: 11px;
+  }
+
+  .whiskeyRes .whiskey {
+    padding-left: 21px;
+  }
+
+  .whiskeyRes .relevancy {
+    padding-left: 155px;
+  }
+
+  .relevancy::after {
+    right: -5px;
+  }
 }
